@@ -5,7 +5,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-STOCKFISH_PATH = r"C:\Users\Administrator\OneDrive\Documents\GitHub\PracticeChessOpeningsBackend\stockfish\stockfish-windows-x86-64-avx2.exe"
+STOCKFISH_PATH = r"./stockfish/stockfish-ubuntu-x86-64-avx2"
 
 def get_best_move(fen, depth=15):
     p = subprocess.Popen(
